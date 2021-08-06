@@ -1,0 +1,38 @@
+.cards__list {
+  @include list-style-none;
+}
+
+.cards__description a {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-dark-grey;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cards__description td {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
+
+.cards__show-more-header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+.cards__show-more-description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
