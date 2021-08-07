@@ -1,5 +1,5 @@
 .types-catalogs__list {
-  @include list-style-none;
+  @include list-style-clear;
 }
 
 .types-catalogs__item {
@@ -7,7 +7,6 @@
 }
 
 .types-catalogs__header {
-  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -16,17 +15,11 @@
 
 .types-catalogs__description {
   font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .types-catalogs__link {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
+  @include link-style-clear;
   font-size: 16px;
   line-height: 16px;
-  color: $black;
   text-transform: uppercase;
-  text-decoration: none;
 }
