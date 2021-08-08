@@ -1,0 +1,14 @@
+.features__header {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.features__list {
+  @include list-style-clear;
+}
+
+.features__item {
+  font-family: "Arial", sans-serif;
+  color: $special-dark-grey;
+}

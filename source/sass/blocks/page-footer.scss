@@ -1,0 +1,33 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
+.contacts {
+  &--background {
+    background-color: $white;
+  }
+}
+
+.contacts__header {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+.contacts__text {
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  color: $special-dark-grey;
+}
+
+.social__list {
+  @include list-style-clear;
+}
+
+.copyright__text {
+  @include link-style-clear;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}

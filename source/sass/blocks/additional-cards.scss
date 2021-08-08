@@ -1,0 +1,24 @@
+.additional-cards__header {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional-cards__list {
+  @include list-style-clear;
+}
+
+.additional-cards__description {
+  color: $special-dark-grey;
+
+  & caption {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  & td {
+    font-family: "Arial", sans-serif;
+    line-height: 14px;
+  }
+}

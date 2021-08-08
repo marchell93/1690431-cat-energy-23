@@ -1,0 +1,34 @@
+.cards__list {
+  @include list-style-clear;
+}
+
+.cards__description {
+  & a {
+    @include link-style-clear;
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic-dark-grey;
+    text-transform: uppercase;
+  }
+
+  & td {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    color: $special-dark-grey;
+  }
+}
+
+.cards__show-more-header {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-black;
+}
+
+.cards__show-more-description {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}

@@ -1,0 +1,11 @@
+@mixin list-style-clear {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin link-style-clear {
+  text-decoration: none;
+  color: $black;
+  cursor: pointer;
+}

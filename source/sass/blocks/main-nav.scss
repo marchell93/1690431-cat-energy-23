@@ -1,0 +1,11 @@
+.main-nav__list {
+  @include list-style-clear;
+}
+
+.main-nav__link {
+  @include link-style-clear;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

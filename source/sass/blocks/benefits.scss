@@ -1,0 +1,36 @@
+.benefits {
+  background-color: $background-grey;
+}
+
+.benefits__header {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.benefits__description {
+  font-family: "Arial", sans-serif;
+  color: $special-dark-grey;
+}
+
+.benefits__list {
+  @include list-style-clear;
+}
+
+.benefits__item-number {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.benefits__item-text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $special-dark-grey;
+}
+
+.benefits__price {
+  line-height: 20px;
+  text-transform: uppercase;
+}
