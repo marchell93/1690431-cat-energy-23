@@ -1,36 +1,139 @@
 .benefits {
   background-color: $background-grey;
+  width: 320px;
+  margin: 0 auto 28px;
+
+  &__wrapper {
+    width: 280px;
+    padding: 0 20px;
+  }
+
+  &__header {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    padding: 27px 0 33px;
+    margin: 0;
+  }
+
+  &__description {
+    font-family: "Arial", sans-serif;
+    color: $special-dark-grey;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+
+  &__list {
+    @include list-style-clear;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 26px;
+  }
+
+  &__item-number {
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  &__item-text {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    color: $special-dark-grey;
+  }
+
+  &__price {
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+  }
 }
 
-.benefits__header {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+@media (min-width: $tablet-width) {
+  .benefits {
+    background-color: $white;
+    width: 768px;
+
+    &__wrapper {
+      width: 708px;
+      padding: 0 30px;
+      margin: 0 auto;
+    }
+
+    &__header {
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 60px;
+      padding: 0 0 63px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 54px;
+    }
+
+    &__list {
+      display: inline-block;
+      padding-bottom: 26px;
+    }
+
+    &__item {
+      display: inline-block;
+    }
+
+    &__item:not(:last-child) {
+      margin-right: 42px;
+    }
+
+
+    &__item-number {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &__item-text {
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    &__price {
+      display: inline-block;
+      font-size: 20px;
+    }
+  }
 }
 
-.benefits__description {
-  font-family: "Arial", sans-serif;
-  color: $special-dark-grey;
-}
+@media (min-width: $desktop-width) {
+  .benefits {
+    background-color: $white;
+    width: 1440px;
 
-.benefits__list {
-  @include list-style-clear;
-}
+    &__wrapper {
+      width: 1220px;
+      padding: 0 110px;
+      margin: 0 auto;
+    }
 
-.benefits__item-number {
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-}
+    &__header {
+      padding: 0 0 76px;
+    }
 
-.benefits__item-text {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  color: $special-dark-grey;
-}
+    &__description {
+      padding-bottom: 69px;
+    }
 
-.benefits__price {
-  line-height: 20px;
-  text-transform: uppercase;
+    &__list {
+      padding-bottom: 55px;
+    }
+
+    &__price {
+      display: block;
+      font-size: 20px;
+      text-align: start;
+    }
+  }
 }

@@ -1,33 +1,116 @@
 .promo {
   color: $white;
+  width: auto;
+  height: 480px;
+  margin: 0 auto;
+  background-image: url("../img/index-background-desktop-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
 
-  position: relative;
-  background-color: rgba(104, 183, 56, 0.85);
-  height: 302px;
-
-  &::before {
-    content: url("../img/index-background-desktop-2.jpg");
+  &::after {
+    content: "";
     position: absolute;
-    z-index: -1;
+    background-color: rgba(104, 183, 56, 0.85);
   }
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   background-color: rgba(104, 183, 56, 0.85);
-  //   width: 320px;
-  //   height: 302px;
-  // }
+  &__description {
+    position: relative;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__slogan {
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+  }
+
 }
 
-.promo__description {
-  font-size: 36px;
-  line-height: 36px;
-  // text-align: center;
+@media (min-width: $tablet-width) {
+  .promo {
+    color: $black;
+    background: transparent;
+    height: 810px;
+
+    &__wrapper {
+      width: 707px;
+      padding: 0 30px;
+      margin: 0 auto;
+    }
+
+    &__description {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__slogan {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__link {
+      display: block;
+    }
+
+    & p,
+    & a {
+      text-align: start;
+      margin-left: 87px;
+    }
+
+    &::before {
+      content: url("../img/index-can-tablet-1.png");
+      position: absolute;
+      z-index: -1;
+    }
+  }
 }
 
-.promo__slogan {
-  line-height: 14px;
-  // text-align: center;
-  text-transform: uppercase;
+@media (min-width: $desktop-width) {
+  .promo {
+    color: $black;
+    background: transparent;
+    height: 635px;
+
+    &__wrapper {
+      width: 1220px;
+      padding: 0 30px;
+      margin: 0 auto;
+    }
+
+    &__description {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__slogan {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__link {
+      display: block;
+    }
+
+    & p,
+    & a {
+      text-align: start;
+      margin-left: 80px;
+    }
+
+    &::before {
+      content: url("../img/index-can.png");
+      position: absolute;
+      z-index: -1;
+      right: 500px;
+    }
+  }
 }

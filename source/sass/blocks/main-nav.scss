@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
-  width: auto;
-  min-height: 66px;
+  width: 320px;
 
   &__toggle {
     position: absolute;
@@ -46,12 +45,15 @@
 
 .main-nav__list {
   @include list-style-clear;
-  // position: absolute;
+  display: none;
 }
 
 .main-nav__item {
   width: 100%;
+  height: 65px;
   border-top: 1px solid $border-grey;
+  background-color: $white;
+  order: 2;
 }
 
 .main-nav__link {
