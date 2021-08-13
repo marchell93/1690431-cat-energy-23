@@ -24,6 +24,13 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 
   &::before,
   &::after {
@@ -32,14 +39,6 @@
     width: 20px;
     height: 2px;
     background-color: $black;
-  }
-
-  &::before {
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    transform: rotate(-45deg);
   }
 }
 
